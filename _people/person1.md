@@ -1,6 +1,6 @@
 ---
-name: "Your instructor"
+name: {{ site.author }}
 role: "Instructor"
-email: "instructor@example.com"
+email: {{ site.email }}
 office_hours: "Tue/Thu 9:55 to 11:40am in HR 403b"
 ---
