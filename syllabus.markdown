@@ -4,14 +4,78 @@ title: Syllabus
 permalink: /syllabus/
 ---
 
-## Learning Objectives
-1. Fill these in
+## Course Objectives
 
-## Assessments
-1. Fill these in
+Computer Architecture refers to the organization of the hardware that executes computer programs. The processor is the most important and complex part of a computer system. As such, it is very important for software developers to understand how processors execute code correctly and with high performance.
+
+This course examines the machine representation of data, low-level programming in C and assembly language, machine language, and the design and implementation of processors at the digital logic level.
+
+## Learning Objectives
+Upon completion of this course the students will have learned the following topics:
+1. Understand and manipulate the machine-level representation of numbers and data in C (labs)
+1. Write C and assembly language programs for the ARM architecture (Project02, Project03)
+1. Design and implement an emulator which executes ARM machine code as a processor might (Project04)
+1. Learn about digital design by building circuits which solve computational problems (Project05)
+1. Design and implement a single-cycle processor using schematics in a simulator (Project06)
+1. Design and implement a pipelined processor using schematics in a simulator (Project07)
+
+#### Assessment
+1. Projects are the main assessment tool for the course. The project corresponding to each learning outcome is shown in parentheses above.
+1. Projects will be graded for both correctness (using an automated tool) and comprehension (using 1:1 interactive grading meetings with the instructor or TA)
+1. Low-stakes labs will build into each project
+1. The final exam will be comprehensive over the semester's work
+
+## Grading Breakdown
+1. Class Participation: 10%
+1. Labs: 10%
+1. Project01 - Raspberry Pi Setup: 5%
+1. Project02 - C and ARM Assembly: 10%
+1. Project03 - C and ARM Assembly: 10%
+1. Project04 - ARM Emulator: 15%
+1. Project05 - Digital Design: 5%
+1. Project06 - Implementation of a Single Cycle Processor: 15%
+1. Project07 - Implementation of a Pipelined Processor: 10%
+1. Final Exam: 10%
+
+## Course Materials
+
+Hardware: A Raspberry Pi. See shopping list and setup instructions
+
+Software: Raspberry Pi OS, including compilers, linkers, assemblers, editors, etc.
+
+Books: None are required but you may find these optional books to be useful
+1. _Digital Design and Computer Architecture: ARM Edition_ Sarah L. Harris and David Money Harris
+1. _Computer Organization and Design: The Hardware/Software Interface: ARM Edition_ David A. Patterson and John L. Hennessy
+1. _The C Programming Language, 2nd Edition_ Brian W. Kernighan and Dennis M. Ritchie
 
 ## Course Policies
-1. Fill these in
+1. Class Participation counts, including attendance, asking questions and answering my questions, office hours, and Piazza
+1. Neatness counts, for both source code and circuit schematics
+1. Original Work
+    1. You may get explanatory help from the instructor, TAs, friends, tutors, or Internet sites
+    1. You must turn in only original work that you personally developed and can explain
+    1. You must not provide your original work to other students
+    1. No credit will be given for work which violates this policy
+1. Deadlines
+    1. If you are not done with an assignment by the deadline, you should turn in what you have working to get full credit for that work
+    1. Late work and corrections may be turned in for 50% credit, up to one week after grades are posted
+    1. Extensions for full credit are not given except in extenuating circumstances, which you must discuss with the instructor in advance
+1. Letter Grades are assigned according to the following table, without rounding or curving
+
+    | Grade shown in Canvas | Letter Grade |
+    | --- | --- |
+    | 100.0% - 93.33%   | A  |
+    | < 93.33% - 90.0%  | A- |
+    | < 90.0% - 86.67%  | B+ |
+    | < 86.67% - 83.33% | B  |
+    | < 83.33% - 80.0%  | B- |
+    | < 80.0% - 76.67%  | C+ |
+    | < 76.67% - 73.33% | C  |
+    | < 73.33% - 70.0%  | C- |
+    | < 70.0% - 66.67%  | D+ |
+    | < 66.67% - 63.33% | D  |
+    | < 63.33% - 60.0%  | D- |
+    | < 60.0%           | F  |
 
 ## University Policies
 
