@@ -5,7 +5,6 @@ permalink: /help/
 ---
 
 ### Online Help
-### Online Help
 1. You can ask questions any time on our Piazza forum
 1. For questions about course material, please ask public questions
 in case others have the same question. For questions about your grade

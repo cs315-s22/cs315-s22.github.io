@@ -1,7 +1,8 @@
 ---
 layout: assignment
 due: 2022-01-31 23:59:59 -0800
-url: https://github.com
+github_url: https://github.com
+permalink: assignments/lab01.html
 ---
 
 ## Requirements
