@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.7.1 -->
+<title>Project04 | CS 315 - Computer Architecture</title>
+<meta name="generator" content="Jekyll v4.2.1" />
+<meta property="og:title" content="Project04" />
+<meta name="author" content="Phil Peterson" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Requirements You will write an emulator in C for a subset of the ARMv7 Instruction Set Architecture (ISA). You do not have to emulate the entire instruction set; just enough to emulate fib_rec, get_bitseq, is_pal , max3, merge_sort, quadratic, sort, and to_upper. You will use your implementation of sort/find_max_index and merge/merge_sort. The other assembly implementations are given. Your emulator will need the logic (decoding and emulating instructions) and state (arm_state) from lab04 Your emulator will support dynamic analysis of instruction execution. Here are the metrics you will collect. # of instructions executed (i_count) # of data processing and mul instructions executed (dp_count) # of SDT (memory) instructions executed (sdt_count) # of branch instructions executed including b, bl, bx, bCC (b_count) # of branches taken including b, bl, bx, bCC (b_taken) # of branches not taken from bCC (b_not_taken) Your emulator will include an implementation of a 4-way set-associative cache, as is common in commercial processors. We are giving you an implementation of a direct mapped cache. In addition to the set associative cache implementation, you will collect the following metrics: Total memory references (refs) Hits (hits) Misses (misses) Cold misses (misses_cold) Hot misses (misses_hot)" />
+<meta property="og:description" content="Requirements You will write an emulator in C for a subset of the ARMv7 Instruction Set Architecture (ISA). You do not have to emulate the entire instruction set; just enough to emulate fib_rec, get_bitseq, is_pal , max3, merge_sort, quadratic, sort, and to_upper. You will use your implementation of sort/find_max_index and merge/merge_sort. The other assembly implementations are given. Your emulator will need the logic (decoding and emulating instructions) and state (arm_state) from lab04 Your emulator will support dynamic analysis of instruction execution. Here are the metrics you will collect. # of instructions executed (i_count) # of data processing and mul instructions executed (dp_count) # of SDT (memory) instructions executed (sdt_count) # of branch instructions executed including b, bl, bx, bCC (b_count) # of branches taken including b, bl, bx, bCC (b_taken) # of branches not taken from bCC (b_not_taken) Your emulator will include an implementation of a 4-way set-associative cache, as is common in commercial processors. We are giving you an implementation of a direct mapped cache. In addition to the set associative cache implementation, you will collect the following metrics: Total memory references (refs) Hits (hits) Misses (misses) Cold misses (misses_cold) Hot misses (misses_hot)" />
+<meta property="og:site_name" content="CS 315 - Computer Architecture" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2022-01-19T01:39:01+00:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Project04" />
+<script type="application/ld+json">
+{"mainEntityOfPage":{"@type":"WebPage","@id":"/assignments/project04.html"},"description":"Requirements You will write an emulator in C for a subset of the ARMv7 Instruction Set Architecture (ISA). You do not have to emulate the entire instruction set; just enough to emulate fib_rec, get_bitseq, is_pal , max3, merge_sort, quadratic, sort, and to_upper. You will use your implementation of sort/find_max_index and merge/merge_sort. The other assembly implementations are given. Your emulator will need the logic (decoding and emulating instructions) and state (arm_state) from lab04 Your emulator will support dynamic analysis of instruction execution. Here are the metrics you will collect. # of instructions executed (i_count) # of data processing and mul instructions executed (dp_count) # of SDT (memory) instructions executed (sdt_count) # of branch instructions executed including b, bl, bx, bCC (b_count) # of branches taken including b, bl, bx, bCC (b_taken) # of branches not taken from bCC (b_not_taken) Your emulator will include an implementation of a 4-way set-associative cache, as is common in commercial processors. We are giving you an implementation of a direct mapped cache. In addition to the set associative cache implementation, you will collect the following metrics: Total memory references (refs) Hits (hits) Misses (misses) Cold misses (misses_cold) Hot misses (misses_hot)","url":"/assignments/project04.html","@type":"BlogPosting","headline":"Project04","dateModified":"2022-01-19T01:39:01+00:00","datePublished":"2022-01-19T01:39:01+00:00","author":{"@type":"Person","name":"Phil Peterson"},"@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="/feed.xml" title="CS 315 - Computer Architecture" /><head>
+  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">  
+</head>
+</head>
+<body><header class="site-header">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/">CS 315 - Computer Architecture</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/help/">Getting Help</a><a class="page-link" href="/syllabus/">Syllabus</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper"><h1 class="page-heading">Project04</h1><div class="container">
+  Due: 
+  <span class="due-date">
+    Mon, Mar 21, 2022 at 11:59 PM 
+  </span>to <a href="https://www.cs.usfca.edu">Github Classroom Assignment</a><hr>
+  <section id="main_content">
+    <h2 id="requirements">Requirements</h2>
+<ol>
+  <li>You will write an emulator in C for a subset of the ARMv7 Instruction Set Architecture (ISA).</li>
+  <li>You do not have to emulate the entire instruction set; just enough to emulate <code class="language-plaintext highlighter-rouge">fib_rec</code>, <code class="language-plaintext highlighter-rouge">get_bitseq</code>, <code class="language-plaintext highlighter-rouge">is_pal</code> , <code class="language-plaintext highlighter-rouge">max3</code>, <code class="language-plaintext highlighter-rouge">merge_sort</code>, <code class="language-plaintext highlighter-rouge">quadratic</code>, <code class="language-plaintext highlighter-rouge">sort</code>, and <code class="language-plaintext highlighter-rouge">to_upper</code>. You will use your implementation of <code class="language-plaintext highlighter-rouge">sort/find_max_index</code> and <code class="language-plaintext highlighter-rouge">merge/merge_sort</code>. The other assembly implementations are given.</li>
+  <li>Your emulator will need the logic (decoding and emulating instructions) and state (<code class="language-plaintext highlighter-rouge">arm_state</code>) from lab04</li>
+  <li>Your emulator will support dynamic analysis of instruction execution. Here are the metrics you will collect.
+    <ol>
+      <li># of instructions executed (i_count)</li>
+      <li># of data processing  and mul instructions executed (dp_count)</li>
+      <li># of SDT (memory) instructions executed (sdt_count)</li>
+      <li># of branch instructions executed including b, bl, bx, bCC (b_count)</li>
+      <li># of branches taken including b, bl, bx, bCC (b_taken)</li>
+      <li># of branches not taken from bCC (b_not_taken)</li>
+    </ol>
+  </li>
+  <li>Your emulator will include an implementation of a 4-way set-associative cache, as is common in commercial processors. We are giving you an implementation of a direct mapped cache. In addition to the set associative cache implementation, you will collect the following metrics:
+    <ol>
+      <li>Total memory references (refs)</li>
+      <li>Hits (hits)</li>
+      <li>Misses (misses)</li>
+      <li>Cold misses (misses_cold)</li>
+      <li>Hot misses (misses_hot)</li>
+    </ol>
+  </li>
+</ol>
+
+<h2 id="given">Given</h2>
+<ol>
+  <li>In lecture and lab, we will:
+    <ol>
+      <li>illustrate how to decode machine code and execute the operations specified</li>
+      <li>illustrate a direct-mapped cache and describe the data structures and algorithms required for a set-associative cache</li>
+    </ol>
+  </li>
+  <li>In-class coding will be pushed to Github. You will provide the rest of the code yourself</li>
+  <li>We will provide autograder test cases for the emulation targets</li>
+</ol>
+
+<h2 id="grading-rubric">Grading Rubric</h2>
+<p><strong>Automated testing</strong>
+80 pts: Automated tests</p>
+
+<p><strong>Interactive grading</strong>
+10 pts: code walkthrough, including, but not limited to, your implementation of dynamic analysis and the instruction cache.</p>
+
+<p><strong>Coding Style</strong>
+10 pts: Clean repo, consistent naming and indentation, no dead code, no unnecessarily complex code</p>
+
+  </section>
+</div>
+
+      </div>
+    </main>
+
+  </body>
+
+</html>
