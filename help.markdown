@@ -6,7 +6,7 @@ permalink: /help/
 
 ### Online Help
 1. You can ask questions any time on [CampusWire](https://campuswire.com/c/GDEA8D740/feed)
-1. For questions about course material, please ask public questions
+1. For questions about course material, please ask in the feed
 in case others have the same question. For questions about your grade
 you can DM the person who graded your work
 1. If you ask an anonymous question, your identity will be anonymous
