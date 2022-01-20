@@ -1,6 +1,6 @@
 ---
 layout: post
-topics: Course introduction
+topics: Course intro
 date:   2022-01-25 08:00:00 -0800
 slides: slides/course-intro.html
 ---
