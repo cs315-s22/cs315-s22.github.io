@@ -49,7 +49,7 @@ Books: None are required but you may find these optional books to be useful
 1. _The C Programming Language, 2nd Edition_ Brian W. Kernighan and Dennis M. Ritchie
 
 ## Course Policies
-1. Class Participation counts, including attendance, asking questions and answering my questions, office hours, and Piazza
+1. Class Participation counts, including attendance, asking questions and answering my questions, office hours, and CampusWire
 1. Neatness counts, for both source code and circuit schematics
 1. Original Work
     1. You may get explanatory help from the instructor, TAs, friends, tutors, or Internet sites
