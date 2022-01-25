@@ -4,5 +4,6 @@ topics: Course intro. [Project01 (Pi Setup)](assignments/project01.html) due in 
 date:   2022-01-25 08:00:00 -0800
 slides: slides/course-intro.html
 video1: https://usfca.zoom.us/rec/share/asVvHj1-vjsgauAaRnDjmsYAxcwUvJb2j7SI_WUl3haKvRIZG8OvCHFqo_umGiQ.yRsqi_1IX4OxEf5O?startTime=1643126164000
+video2: https://echo360.org/media/f0a46205-7caf-4814-8905-79142eaff8fb
 ---
 
