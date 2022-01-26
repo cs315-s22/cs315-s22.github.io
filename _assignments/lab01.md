@@ -1,7 +1,7 @@
 ---
 layout: assignment
 due: 2022-01-31 23:59:59 -0800
-github_url: https://github.com
+github_url: https://classroom.github.com/a/gbp1aS0D
 permalink: assignments/lab01.html
 ---
 
@@ -50,8 +50,6 @@ while value != 0
 copy buffer into str in reverse order
 ```
 ## Rubric
-For a Check-, you will correctly scan the input parameters and implement `string_to_int()`
-
-For a Check, you will also implement `void int_to_string(uint32_t value, char *str, int base)` where base is 2
-
-For a Check+, you will also implement the general form: `void int_to_string(uint32_t value, char *str, int base)` where base may be 2, 10, or 16
+1. For a Check- (80), you will correctly scan the input parameters and implement `string_to_int()`
+2. For a Check (90), you will also implement `void int_to_string(uint32_t value, char *str, int base)` where base is 2
+3. For a Check+ (100), you will also implement the general form: `void int_to_string(uint32_t value, char *str, int base)` where base may be 2, 10, or 16
