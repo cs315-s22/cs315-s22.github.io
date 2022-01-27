@@ -1,0 +1,6 @@
+---
+layout: post
+topics: Pi setup and more discussion on number bases.
+date:   2022-01-27 08:00:00 -0800
+video1: https://usfca.zoom.us/rec/share/QSV5Eglu8RrLJ4N5_8Nb6caPoSE-V2NQLoro6qS60jjgGKfznPIgmdr_SQJQUfLG.lasydfIv4tdjweYO
+---
