@@ -1,10 +1,10 @@
 ---
 layout: assignment
-due: 2022-02-09 14:00:00 -0800
 permalink: assignments/project01-port-forwarding.html
 ---
 ### Requirements
 1. If you want to leave your pi at home, you must be able to control the WiFi router at home 
+1. This is all **optional** not part of the project01 checkoff
 
 ### Your Home Network
 1. Your home router has an IPv4 address on the public Internet. If you use a website like [https://whatismyipaddress.com/](https://whatismyipaddress.com/) from your home network, you can see an address like `73.240.154.193` (just an example)
