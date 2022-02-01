@@ -1,0 +1,6 @@
+---
+layout: post
+topics: Reviewed Lab01 and began talking about ARM
+date:   2022-02-01 08:00:00 -0800
+video1: https://usfca.zoom.us/rec/share/lFvEw7GAD_1P4m0-3O7OtPQ88dXdZP-hLQYUTK_n6r2z9FWoLyXROO5uV2KY3WYB.2CkvIppq-dmUCgbN
+---
