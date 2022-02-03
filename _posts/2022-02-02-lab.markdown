@@ -3,4 +3,6 @@ layout: post
 topics: Conditional execution, [autograder](https://cs221.cs.usfca.edu/slides/autograder.html), assigned [lab02](assignments/lab02.html) due Mon 2/7
 date:   2022-02-02 08:00:00 -0800
 video1: https://usfca.zoom.us/rec/share/eqW23GlVB8EcPVnyFjqaBFMCE-eU4TGtEptUTDPqWiO6zKYao4OEZ-n-p2OPymqW.pB1vnNFEHRxKVVud
+code1: https://github.com/cs315-s22/inclass/tree/main/week02/loop
+notes1: https://drive.google.com/file/d/1Emp_W0udIyRCiltTlqMU4iH3-eURfeFu/view?usp=sharing
 ---

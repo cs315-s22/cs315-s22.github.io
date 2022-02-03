@@ -1,7 +1,7 @@
 ---
 layout: assignment
 due: 2022-02-07 23:59:59 -0800
-github_url: https://github.com
+github_url: https://classroom.github.com/a/tS-gwimz
 permalink: assignments/lab02.html
 ---
 
@@ -34,8 +34,6 @@ Asm: 2
 We will demonstrate a framework for compiling C and assembly language source files, and calling assembly language functions from C
 
 ## Rubric
-For a Check-, your implementation will pass the test cases for one of the three problems
-
-For a Check, your implementation will pass the test cases for two of the three problems
-
-For a Check+, your implementation will pass all of the test cases
+1. For a Check- (80 pts), your implementation will pass the test cases for one of the three problems
+1. For a Check (90 pts), your implementation will pass the test cases for two of the three problems
+1. For a Check+ (100 pts), your implementation will pass all of the test cases
