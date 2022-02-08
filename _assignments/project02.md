@@ -1,19 +1,19 @@
 ---
 layout: assignment
 due: 2022-02-14 23:59:59 -0800
-github_url: https://www.cs.usfca.edu
+github_url: https://classroom.github.com/a/RmE_hCt0
 permalink: assignments/project02.html
 ---
 
 ## Requirements
 1. You will develop ARM assembly language implementations of the following problems, and print the results to ensure that both the C implementation and your ARM implementation compute the correct answer.
 1. Your executables must be named as follows, and must be compiled with a `Makefile`
-1. We will test your projects using `autograder`
+1. We will test your projects using `autograder`. You need to `git pull` in the `tests` repo.
 
 **to_upper**
 Given a string of upper, lower, and non-alphanumeric characters, transform lowercase letters into uppercase letters.
 ```
-$./to_upper FooBar1
+$ ./to_upper FooBar1
 C: FOOBAR1
 Asm: FOOBAR1
 ```
@@ -30,7 +30,7 @@ Given an array of integers, return the index of the largest integer in the array
 $ ./find_max_index 5 4 3 2 1
 C: 0
 Asm: 0
-$./find_max_index 1 2 3 4 5
+$ ./find_max_index 1 2 3 4 5
 C: 4
 Asm: 4
 ```
