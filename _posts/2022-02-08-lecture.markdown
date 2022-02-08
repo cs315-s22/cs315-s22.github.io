@@ -2,4 +2,6 @@
 layout: post
 topics: Memory (load/store), assigned [project02](assignments/project02.html) due 2/14
 date:   2022-02-08 08:00:00 -0800
+notes1: https://drive.google.com/file/d/1cr1cFjNdlA-L98D69Tb6BdBOusreqcwU/view?usp=sharing
+video1: https://usfca.zoom.us/rec/share/jNZB5e-9jEf41y4intMuUdECzWhjKHJBfgiGvfe95c7jMxWf4FkpGFkzaY5pqXT0.jxa8xTsD-X1oKBpA
 ---
