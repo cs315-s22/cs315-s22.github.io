@@ -1,0 +1,8 @@
+---
+layout: post
+topics: Indexing modes, Branch and Link
+date:   2022-02-09 08:00:00 -0800
+code1: https://github.com/cs315-s22/inclass/tree/main/week03/strlen
+notes1: https://drive.google.com/file/d/17zSuh4eqVI8oVCvHOY78Qr7AKfJt4CNP/view?usp=sharing
+video1: https://usfca.zoom.us/rec/share/RPNAmhLVUHvtlAapgbqEL-DiW4ugrCigeebHl1_Co44_t1CcyB04VCK3dU8yWQLN.XyTLtc1yL8pkpZ_c?startTime=1644508859000
+---
