@@ -1,7 +1,7 @@
 ---
 layout: assignment
 due: 2022-02-21 23:59:59 -0800
-github_url: https://www.cs.usfca.edu
+github_url: https://classroom.github.com/a/Zkv2W9kC
 permalink: assignments/lab03.html
 ---
 
@@ -49,6 +49,6 @@ Asm: True
 1. We provide C implementation of `fibrec_c()`, `sumarr_rec_c()`, `is_pal_rec_c()`.
 
 ## Rubric
-1. For a Check-, your implementation will pass the test cases for one of the three problems
-1. For a Check, your implementation will pass the test cases for two of the three problems
-1. For a Check+, your implementation will pass all of the test cases
+1. For 80 pts, your implementation will pass the test cases for one of the three problems
+1. For 90 pts, your implementation will pass the test cases for two of the three problems
+1. For 100 pts, your implementation will pass all of the test cases
