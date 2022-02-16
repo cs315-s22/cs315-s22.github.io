@@ -23,7 +23,8 @@ Asm: 6765
 **sumarr_rec**: Recursive sum array. Example:
 ```
 $ ./sumarr_rec 1 2 3 4 5
-C: 15Asm: 15
+C: 15
+Asm: 15
 ./sumarr_rec -1 0 -3 0 -9 0 9 0 3 1
 C: 0
 Asm: 0
