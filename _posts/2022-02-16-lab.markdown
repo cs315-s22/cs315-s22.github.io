@@ -3,4 +3,5 @@ layout: post
 topics: Recursion, Stack, LR
 date:   2022-02-16 08:00:00 -0800
 notes1: https://drive.google.com/file/d/1SvuNNaE2MljtvgFTfIPrqareE5PS1IeR/view?usp=sharing
+video1: https://usfca.zoom.us/rec/share/deuF7sTV9FEAwwq5Nr626Nvo5u4E90ZJvw2ILw5dIOAo67-Y7RAHOFyLaZybqJ9D.tFscQIbDz1kZi6Hw
 ---
