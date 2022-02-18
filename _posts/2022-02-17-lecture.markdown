@@ -1,0 +1,8 @@
+---
+layout: post
+topics: find_max_index Recursive Iplementation
+date:   2022-02-17 08:00:00 -0800
+code1: https://github.com/cs315-s22/inclass/tree/main/week04/fmi_rec
+notes1: https://drive.google.com/file/d/1-mYwxsMU36RwK2NTdDMiiQcvmbIV1Deo/view?usp=sharing
+video1: https://usfca.zoom.us/rec/share/UOuWqsmg_LfJvHRzPZDKJzpNclQ9QqcA8H2NIHSdyB64cUmMPYftUAi_bKCU-eSo.2yqY-xCcV_FhQdYR
+---
