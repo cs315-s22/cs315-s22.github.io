@@ -1,0 +1,5 @@
+---
+layout: post
+topics: Lab03 review, bitwise arithmetic, sign extension, assigned [project03](assignments/project03.html) due 3/28
+date:   2022-02-22 08:00:00 -0800
+---

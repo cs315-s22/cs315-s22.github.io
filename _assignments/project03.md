@@ -1,7 +1,7 @@
 ---
 layout: assignment
 due: 2022-02-28 23:59:59 -0800
-github_url: https://www.cs.usfca.edu
+github_url: https://classroom.github.com/a/ezDLAlk5
 permalink: assignments/project03.html
 ---
 
@@ -63,9 +63,7 @@ Asm: 1 2 3 4 5 6
 The starter repo contains C implementations for each of the programs
 
 ## Rubric
+1. For project03 we will do 1:1 interactive grading in Tuesday's lecture period. Please sign up for a time slot on this spreadsheet
 1. 80 points: automated test cases
-1. 5 points: clean repo (no build products) which compiles and links successfully
-1. 15 points: code quality: consistent formatting, no dead or redundant code, no unnecessarily complex code, readable comments
-1. Fixes may be submitted up to one week after grades are posted
-    - Deductions for code quality and clean repo may be fixed for 100% credit
-    - Deductions for correctness or incomplete work may be fixed for 50% credit
+1. 15 points: Q&A during meeting
+1. 5 points: code quality: consistent formatting, no dead or redundant code, no unnecessarily complex code, readable comments
