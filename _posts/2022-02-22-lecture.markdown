@@ -2,4 +2,6 @@
 layout: post
 topics: Lab03 review, bitwise arithmetic, sign extension, assigned [project03](assignments/project03.html) due 3/28
 date:   2022-02-22 08:00:00 -0800
+notes1: https://drive.google.com/file/d/1gDvN-dUSXuBC9z5TjT_yBc3MfsVHFBQC/view?usp=sharing
+video1: https://usfca.zoom.us/rec/share/akCSlrKuU-v6by4v1-jJna-GCHdTG124IFkoqng11McMp7AgcSDFgZrjPfJjHGNP.wZ5Xxm9_QOPSBktx
 ---
