@@ -1,0 +1,8 @@
+---
+layout: post
+topics: Shifting, Merge Sort, Machine code
+date:   2022-02-24 08:00:00 -0800
+code1: https://github.com/cs315-s22/inclass/tree/main/week05/shifting
+notes1: https://drive.google.com/file/d/1hpTr_Fq1BzYQb-xQFn44iwQIFI6HyKwd/view?usp=sharing
+video1: https://usfca.zoom.us/rec/share/64BFH61dr0yqZlI_I9gbQi9zIwGrD9AXDxHlc-dA3dd7m9jejMuphSVga5sDlaMh.lNBXGaw5uIM5jHwy
+---
