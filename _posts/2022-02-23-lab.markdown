@@ -1,0 +1,7 @@
+---
+layout: post
+topics: More bitwise arithmetic, sign extension, and two's complement
+date:   2022-02-23 08:00:00 -0800
+notes1: https://drive.google.com/file/d/1ix_nG2-M9dcgUvFjg7Ux5QrG5N1sdAU0/view?usp=sharing
+video1: https://usfca.zoom.us/rec/share/crX8_NQ91ceFsJp90LScQt7Tvvf_cfxZsX0x2gU0_jG_VhPHDqm5GQ2tfLxV_zo.te1qPG8tGkK9SHZ9
+---
