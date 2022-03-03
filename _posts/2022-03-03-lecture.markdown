@@ -1,0 +1,6 @@
+---
+layout: post
+topics: Arm Emulator, Op. Codes, Cond. Codes
+date:   2022-03-03 08:00:00 -0800
+video1: https://usfca.zoom.us/rec/share/6DzM2jpPo1jqb7AA_ylZG5NmXc5AqkarfIfdm5IabrcCUs38NEL4eCeG5RGyQKYx.g88Npx1E_FB_7EdQ
+---
