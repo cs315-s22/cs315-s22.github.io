@@ -2,5 +2,7 @@
 layout: post
 topics: Arm Emulator, Op. Codes, Cond. Codes
 date:   2022-03-03 08:00:00 -0800
+notes1: https://drive.google.com/file/d/1VznE1hYsCCjJJ4G-Z17Ucs2BcQL1MD09/view?usp=sharing
 video1: https://usfca.zoom.us/rec/share/6DzM2jpPo1jqb7AA_ylZG5NmXc5AqkarfIfdm5IabrcCUs38NEL4eCeG5RGyQKYx.g88Npx1E_FB_7EdQ
+code1: https://github.com/cs315-s22/inclass/tree/main/week06/armemu
 ---
