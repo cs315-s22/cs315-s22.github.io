@@ -1,7 +1,7 @@
 ---
 layout: assignment
-due: 2022-03-21 23:59:59 -0800
-github_url: https://www.cs.usfca.edu
+due: 2022-03-23 23:59:59 -0800
+github_url: https://classroom.github.com/a/u0rCLB8G
 permalink: assignments/project04.html
 ---
 
@@ -27,15 +27,9 @@ permalink: assignments/project04.html
 1. In lecture and lab, we will: 
     1. illustrate how to decode machine code and execute the operations specified
     1. illustrate a direct-mapped cache and describe the data structures and algorithms required for a set-associative cache
-1. In-class coding will be pushed to Github. You will provide the rest of the code yourself
 1. We will provide autograder test cases for the emulation targets
 
 ## Grading Rubric
-**Automated testing**
-80 pts: Automated tests 
-
-**Interactive grading**
-10 pts: code walkthrough, including, but not limited to, your implementation of dynamic analysis and the instruction cache.
-
-**Coding Style**
-10 pts: Clean repo, consistent naming and indentation, no dead code, no unnecessarily complex code
+1. 80 pts: Automated tests 
+1. 10 pts: Interactive Grading, including, but not limited to, your implementation of dynamic analysis and the instruction cache.
+1. 10 pts: Clean repo, consistent naming and indentation, no dead code, no unnecessarily complex code

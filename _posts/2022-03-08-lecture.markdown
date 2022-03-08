@@ -1,0 +1,5 @@
+---
+layout: post
+topics: Branch target, shift, memory target, assigned [project04](assignments/project04.html) due Wed 3/22.
+date:   2022-03-08 08:00:00 -0800
+---
