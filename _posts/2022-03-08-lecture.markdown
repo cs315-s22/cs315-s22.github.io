@@ -3,4 +3,6 @@ layout: post
 topics: Branch target, shift, memory target, assigned [project04](assignments/project04.html) due Wed 3/22.
 date:   2022-03-08 08:00:00 -0800
 video1: https://usfca.zoom.us/rec/share/SM4DDxUXuuGX-qGXvRkAHRfpR_UbeEe3VTGsixnh4I2PyQjLza8Gzqw036WVKA8f.TdAbhhZPxx6puj0Z
+notes1: https://drive.google.com/drive/u/1/folders/1f9CRg1gYhJQhzqKI4uK26YTq_4Jp6tjO
+code1: https://github.com/cs315-s22/inclass/tree/main/week07/encoding
 ---
