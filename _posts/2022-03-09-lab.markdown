@@ -1,0 +1,7 @@
+---
+layout: post
+topics: Debugging, Memory, and Stack
+date:   2022-03-09 08:00:00 -0800
+video1: https://usfca.zoom.us/rec/share/6kdxviLi-JpyZNS_2a8jOfJUL0OCea9VXstpNI9PGETe5o62AoOdIN7mC4OXp25n.zu5pRTvsCo1OvkjD
+notes1: https://drive.google.com/file/d/1MZ6KKYd6uAyjxhK5ekzIF3zr8PrGQQoS/view?usp=sharing
+---
