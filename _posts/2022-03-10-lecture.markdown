@@ -2,6 +2,6 @@
 layout: post
 topics: Cache, Direct-Mapped, Fully Associative, Set Associative
 date:   2022-03-10 08:00:00 -0800
-video1: https://usfca.zoom.us/rec/share/6kdxviLi-JpyZNS_2a8jOfJUL0OCea9VXstpNI9PGETe5o62AoOdIN7mC4OXp25n.zu5pRTvsCo1OvkjD
+video1: https://usfca.zoom.us/rec/share/Krx7n_-FGjf83uEF1ZLGjAmgInA-0un6E4teqWkQRBwlnNEAXwFNG9yFzD9khj-8.gQwXn-QWt0pJR-kF
 notes1: https://drive.google.com/file/d/1FYs06ZwFLluby-hASiYeNm9tP0qR9S8o/view?usp=sharing
 ---
