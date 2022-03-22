@@ -1,0 +1,7 @@
+---
+layout: post
+topics: Branch Target, Memory, Set Associative Cache
+date:   2022-03-22 08:00:00 -0800
+video1: https://usfca.zoom.us/rec/share/S5cOlNiL4_PoD_z3BoUB5cRVzE3L1NfVXat4NqdOeU0G9xmuDQB1D2IVT19JJgNU.Y0nImoxGp3OH4KL-
+notes1: https://drive.google.com/file/d/1AuasKJT_euPJnZPqM87dGBePO-8iucnZ/view?usp=sharing
+---
