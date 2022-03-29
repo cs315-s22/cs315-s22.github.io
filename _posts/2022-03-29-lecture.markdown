@@ -2,4 +2,6 @@
 layout: post
 topics: Digital Design intro, assigned [lab05](assignments/lab05.html) due 4/4
 date:   2022-03-29 08:00:00 -0800
+video1: https://usfca.zoom.us/rec/share/9lEv25Zeq8vKwra5FlVIGOpjwbZKJnCZEGNkK7E7VHK8ZCPXH-qQqht9Rrxst1vT.u3gWIUSnBN-wlUv_
+notes1: https://drive.google.com/file/d/1BLn4ShmKGfRgeqGIAzpBpnUKqDcbLhO-/view?usp=sharing
 ---
