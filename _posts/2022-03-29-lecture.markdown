@@ -1,0 +1,5 @@
+---
+layout: post
+topics: Digital Design intro, assigned [lab05](assignments/lab05.html) due 4/4
+date:   2022-03-29 08:00:00 -0800
+---
