@@ -1,0 +1,8 @@
+---
+layout: post
+topics: Digital, Boolean Algebra
+date:   2022-03-30 08:00:00 -0800
+video1: https://usfca.zoom.us/rec/share/B33to_2tHGHT2ZY6CdOEfeZrHuKq5fj0yKIAxyJ5Dr0ieAwtOzfONIaAUJrCmVpz.1s63TgmJh-etpFKb
+notes1: https://drive.google.com/file/d/1OuGYWKfbFCY27eN7dTpr2-LIqR7pF2mA/view?usp=sharing
+notes2: https://drive.google.com/file/d/19BN2g0EHM8n__767t7OcwnnbNHeaqJSf/view?usp=sharing
+---
