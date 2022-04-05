@@ -1,7 +1,7 @@
 ---
 layout: assignment
 due: 2022-04-11 23:59:59 -0800
-github_url: https://www.cs.usfca.edu
+github_url: https://classroom.github.com/a/DCzvqBzK
 permalink: assignments/project05.html
 ---
 
@@ -47,4 +47,4 @@ Remember to commit your `.hex` files in your repo
 1. Neatness (12 pts.)
 
 ## Partial Top-level Circuit Image
-![project06-top-level]({{ img_base }}/project05-top-level.png)
+![project05-top-level]({{ img_base }}/project05-top-level.png)
