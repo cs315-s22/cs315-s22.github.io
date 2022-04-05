@@ -2,4 +2,6 @@
 layout: post
 topics: Sequential Logic, assigned [project05](assignments/project05.html) due 4/11
 date:   2022-05-05 08:00:00 -0800
+video1: https://usfca.zoom.us/rec/share/CqscNA0qHy3tVxNpemZcRYKTA7CLWsRMB2mGkWEJY-Qdr2AyBkCxVHwNBmyG48Iq.1EZeGxj0sKdLsFs5
+notes1: https://drive.google.com/file/d/1yzU2yOshbHsMBEN-hJZU00D1ZM4Zffh8/view?usp=sharing
 ---
