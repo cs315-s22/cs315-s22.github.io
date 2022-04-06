@@ -1,0 +1,7 @@
+---
+layout: post
+topics: Counters, Encoder/Decoder, Making Roms
+date:   2022-03-31 08:00:00 -0800
+video1: https://usfca.zoom.us/rec/share/54H9i0gmj2usWWwelvQvrjaf5hJlDgaO5o0mW5wHGQLRnZk6jMJlcg2ioTvmPI6Y.plV70b3lfliTCWDT
+notes1: https://drive.google.com/file/d/1YQKqZ0kyaFm0qcymidp_UUaBXd2WlYO-/view?usp=sharing
+---
