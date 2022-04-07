@@ -1,0 +1,7 @@
+---
+layout: post
+topics: Counters, Roms, Clock demo, Project05
+date:   2022-04-07 08:00:00 -0800
+video1: https://usfca.zoom.us/rec/share/6J0ipKsm3eH2aKU2dtcM3PaxNsDeoAJ3zo_9hChQX4gU3HW5ZwM-1Lvjx9_O0i6t.03oWq9cScK0vbQsH
+notes1: https://drive.google.com/file/d/1z4kVHs0yRnP7gwUt0uaNW3N4g-uRJm6H/view?usp=sharing
+---
