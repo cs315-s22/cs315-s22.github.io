@@ -1,7 +1,7 @@
 ---
 layout: assignment
 due: 2022-04-18 23:59:59 -0800
-github_url: https://www.cs.usfca.edu
+github_url: https://classroom.github.com/a/bvN0TmXN
 permalink: assignments/lab06.html
 ---
 
@@ -20,6 +20,8 @@ Your top-level processor must have a variation of the dashboard view using split
 
 Your top-level circuit should be able to index through a program in instruction memory showing each instruction word for the specified program, although this is not tested by the autograder in this lab.
 
+**Lab deliverables** 
+
 By manipulating the inputs to the Register File, ALU, `CLK`, and `CLR`, your circuit should be able to execute four small programs:
 
 1. `add r0, r0, #1` resulting in `R0` = 1 
@@ -28,8 +30,7 @@ By manipulating the inputs to the Register File, ALU, `CLK`, and `CLR`, your cir
 1. `mov r0, #1` resulting in `R0` = 1  
 `mov r1, #1` resulting in `R1` = 1  
 `sub r0, r0, r1` resulting in `R0` = 0
-
-Your ALU should be able to subtract A - B and calculate the correct values for its outputs `N` (negative) and `Z` (zero)
+1. Your ALU should be able to subtract A - B and calculate the correct values for its outputs `N` (negative) and `Z` (zero)
 
 For the autograder to test the four cases above:
 1. Your main circuit must be named `lab06.dig`, have inputs named `CLK`, `CLR`, `RR0`, `RR1`, `WR`, `WE`, `ALUSrcB`, `ALUOp`, and `Imm`, and outputs named `R0` and `R1`
@@ -41,6 +42,6 @@ You may use any of Digital's built-in components, or your own if you prefer.
 
 ## Rubric
 
-80 pts : Item 6 subparts 1-3  
-90 pts : Item 6 subparts 1-4  
-100 pts : Item 6 subparts 1-4 and Item 7
+80 pts : Lab deliverables #1-3  
+90 pts : Lab deliverables #4  
+100 pts : Lab deliverables #5
