@@ -3,10 +3,12 @@ layout: default
 ---
 
 <div class="container">
-  Due: 
-  <span class="due-date">
-    {{ page.due | date: site.due_date_format }} 
-  </span>
+  {%- if page.due -%}
+    Due: 
+    <span class="due-date">
+      {{ page.due | date: site.due_date_format }} 
+    </span>
+  {%- endif -%}
   {%- if page.github_url -%}
     to <a href="{{ page.github_url }}">Github Classroom Assignment</a>
   {%- endif -%}
