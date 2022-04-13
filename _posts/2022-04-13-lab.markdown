@@ -1,0 +1,7 @@
+---
+layout: post
+topics: Regs, ALU, Register File
+date:   2022-04-13 08:00:00 -0800
+notes1: https://drive.google.com/file/d/1du_2OBI_HRY0V6v6v2MtVtsslpdbPThh/view?usp=sharing
+video1: https://usfca.zoom.us/rec/share/9RkmTmo_U9zKV18P2q7VZOWQVoamsvkIDjEPuHOsd3ByEY3gCLrp49L_03o27ZKx.xBLO1JAGGoUt08HZ
+---
