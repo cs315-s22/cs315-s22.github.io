@@ -1,0 +1,7 @@
+---
+layout: post
+topics: Reg File, ALU, Pipelines, Extension Unit
+date:   2022-04-14 08:00:00 -0800
+video1: https://usfca.zoom.us/rec/share/F4FwY_uQt4rBBwvh88zBLr1D535cTuRv_wgZ_Vhr4dhi3RD88-OhYFD-ThuvcS4f.wqgSLfiMapVC4eeS
+notes1: https://drive.google.com/file/d/1DsSuAYSxKoGCEHJrnk7wO3jGLAcp13au/view?usp=sharing
+---
