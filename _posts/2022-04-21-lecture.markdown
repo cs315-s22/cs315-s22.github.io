@@ -1,0 +1,6 @@
+---
+layout: post
+topics: Control bits, Understanding control flow 
+date:   2022-04-21 08:00:00 -0800
+video1: https://usfca.zoom.us/rec/share/haRHd4NIWvIxX9p0IHKN38DsvCFhB58Qc3Y3Tx2yr02WAQQuDfESPxcgJDENy0c3.ehVBVB_-1W7QJd3a
+---
