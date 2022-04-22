@@ -1,0 +1,6 @@
+---
+layout: post
+topics: Lab07 control signals 
+date:   2022-04-20 08:00:00 -0800
+video1: https://usfca.zoom.us/rec/share/-vNtt4g7oUOnZ6KqV8yyV39DffkyXQNOSpUZUYofcVotjaM3yXX9_CWkSUjCdP4.VCpd7s7vPKMDKruv
+---
