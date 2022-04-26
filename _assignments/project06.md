@@ -33,7 +33,7 @@ Your processor implementation will include the following major sub-circuits:
 1. The Control Path will connect the Control unit to various sub-circuits and multiplexers
 
 ## Given
-1. We have compiled a three-part guide to completing this project: [part1](assignments/project06-part-1.html), [part2](assignments/project06-part-2.html), [part3](assignments/project06-part-3.html)
+1. We have compiled a three-part guide to completing this project: [part1](project06-part-1.html), [part2](project06-part-2.html), [part3](project06-part-3.html)
 1. We will discuss the major sub-circuits in lecture and you will have hands-on time to develop and ask questions
 1. The GitHub assignment has a starter repo which contains:
     - A starter instruction memory circuit 
