@@ -2,4 +2,6 @@
 layout: post
 topics: Simulating the stack, Conditional Execution, Assigned [project06](assignments/project06.html) due 5/2 
 date:   2022-04-26 08:00:00 -0800
+notes1: https://drive.google.com/file/d/1-YykfmG2_1ACbGwywyCCXw3mZKIongD3/view?usp=sharing
+video1: https://usfca.zoom.us/rec/share/n10h2_djF-fDUt3mVTDikmUJCeTzhNdb5Q-wZY_Ib-CvhiLTcxZirN9jEaYRCbwf.NVVQ_yMw4L_EJlkb
 ---
