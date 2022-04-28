@@ -1,0 +1,7 @@
+---
+layout: post
+topics: Conditional Execution, Memory Control Flow, RR2/RD2, Debugging Checklist
+date:   2022-04-28 08:00:00 -0800
+notes1: https://drive.google.com/file/d/1wx7xzdSrGxBPcXpr9TW8-c0T1QJI2rk8/view?usp=sharing
+video1: https://usfca.zoom.us/rec/share/5FMSVkzWtqaIJvllSMvBFkgv_maHn7Vd11z7jJuQDjeKoiZcr38_Nns0tSv_8Ihe.SPfvmGxDtz0QMdNN
+---
