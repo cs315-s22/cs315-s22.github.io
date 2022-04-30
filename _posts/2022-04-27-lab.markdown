@@ -2,6 +2,6 @@
 layout: post
 topics: Simulating the stack 
 date:   2022-04-27 08:00:00 -0800
-notes1: https://drive.google.com/file/d/1-YykfmG2_1ACbGwywyCCXw3mZKIongD3/view?usp=sharing
+notes1: https://drive.google.com/file/d/1N0dxQdV3Dw4xWtYuRe-3eRxyfhvBsScP/view?usp=sharing
 video1: https://usfca.zoom.us/rec/share/fHdcXmKbTcdgElD4L0LXw9XkyB69q6uj9UN3Pcq1MkEzt8AwtPRt3B0nsj7ASfih.6UL0mKRz73HVQxh2
 ---
