@@ -2,4 +2,5 @@
 layout: post
 topics: Pipelining. Assigned [project07](assignments/project07.html) due 5/12
 date:   2022-05-04 08:00:00 -0800
+notes1: https://drive.google.com/file/d/1xeyPfo4F-a6qm3V4UgG-afrxxCJtXjNV/view?usp=sharing
 ---
