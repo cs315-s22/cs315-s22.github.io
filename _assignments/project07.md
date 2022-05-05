@@ -35,7 +35,7 @@ permalink: assignments/project07.html
     ```
     This program illustrates the need to Stall the pipeline, since the `add` instruction depends on the value loaded by the `ldr` instruction. Your Hazard Unit will enable a Stall in the appropriate Pipeline Registers.
 
-    **05-blbx-fls.s**
+    **06-blbx-fls.s**
 
     ```
     main:
