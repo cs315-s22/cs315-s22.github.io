@@ -1,0 +1,7 @@
+---
+layout: post
+topics: Hazards, Project07
+date:   2022-05-05 08:00:00 -0800
+notes1: https://drive.google.com/file/d/1YX1yDMNv3TovMLOGuo3kC43sBCMY_Ub1/view?usp=sharing
+video1: https://usfca.zoom.us/rec/share/uwoy7Dc4tDv-Djt-PuSpLQgAHYQQyiE8WJ1ddmeMSUNOPYYjO9x6aKgfKRtaqN4U.db0WQhuDll_rFFxi
+---
