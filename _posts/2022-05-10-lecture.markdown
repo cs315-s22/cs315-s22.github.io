@@ -1,0 +1,7 @@
+---
+layout: post
+topics: Project07, Memory Stalls, Branch Flushing
+date:   2022-05-10 08:00:00 -0800
+notes1: https://drive.google.com/file/d/1Y-XWf0jkLctBbv5aBpvVgsbQyBMHcgND/view?usp=sharing
+video1: https://usfca.zoom.us/rec/share/0AepHSbtesqxpeXce6WZ9wdpU0KQaSYfctxfZktXqDVTsjrBjRD2cjVhTd6A26Qk.To-z1ZtXGKbOEkn5
+---
