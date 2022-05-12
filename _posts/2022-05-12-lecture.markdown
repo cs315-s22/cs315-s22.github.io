@@ -1,0 +1,7 @@
+---
+layout: post
+topics: Project07 Review, Real Processors
+date:   2022-05-12 08:00:00 -0800
+notes1: https://drive.google.com/file/d/1JFFjojHbqhCBZiLQ_U2nNvBdg1SxwNuU/view?usp=sharing
+video1: https://usfca.zoom.us/rec/share/xuuhkYGF31F-PMbpOD8g6Wwm_Lb2VyHmQzfkhsggGScQ14EICzrv1a6ghqWLd5Pq._6yzaPj6ZZyNuZAG
+---
