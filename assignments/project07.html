@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.7.1 -->
+<title>Project07 | CS 315 - Computer Architecture</title>
+<meta name="generator" content="Jekyll v4.2.1" />
+<meta property="og:title" content="Project07" />
+<meta name="author" content="Phil Peterson" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Requirements For this project, you will start with a given, basic implementation of a pipelined processor. This is a 5-stage pipeline processor that includes pipeline registers between each stage. To execute code on this processor, code must contain nop (no operation) instructions between real instructions so that the register file is updated properly. We will learn how this processor works in class this week. You will evolve the given implementation to include a Hazard Unit and data path additions which provides support for Register Forwarding for data dependencies, Stalling for memory reads, and Flushing the pipeline to handle branches. The ultimate goal is to remove the need for nop instructions to properly execute code and to allow the pipeline to run at the fastest rate possible. You will commit the entire implementation of your pipelined processor, including the given circuits and ROMs, to your assignment repo. Your top-level processor must be named project07.dig. The Hazard Unit gives the processor the ability to automatically handle the hazard conditions described in the following test cases." />
+<meta property="og:description" content="Requirements For this project, you will start with a given, basic implementation of a pipelined processor. This is a 5-stage pipeline processor that includes pipeline registers between each stage. To execute code on this processor, code must contain nop (no operation) instructions between real instructions so that the register file is updated properly. We will learn how this processor works in class this week. You will evolve the given implementation to include a Hazard Unit and data path additions which provides support for Register Forwarding for data dependencies, Stalling for memory reads, and Flushing the pipeline to handle branches. The ultimate goal is to remove the need for nop instructions to properly execute code and to allow the pipeline to run at the fastest rate possible. You will commit the entire implementation of your pipelined processor, including the given circuits and ROMs, to your assignment repo. Your top-level processor must be named project07.dig. The Hazard Unit gives the processor the ability to automatically handle the hazard conditions described in the following test cases." />
+<meta property="og:site_name" content="CS 315 - Computer Architecture" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2022-05-12T18:45:50+00:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Project07" />
+<script type="application/ld+json">
+{"description":"Requirements For this project, you will start with a given, basic implementation of a pipelined processor. This is a 5-stage pipeline processor that includes pipeline registers between each stage. To execute code on this processor, code must contain nop (no operation) instructions between real instructions so that the register file is updated properly. We will learn how this processor works in class this week. You will evolve the given implementation to include a Hazard Unit and data path additions which provides support for Register Forwarding for data dependencies, Stalling for memory reads, and Flushing the pipeline to handle branches. The ultimate goal is to remove the need for nop instructions to properly execute code and to allow the pipeline to run at the fastest rate possible. You will commit the entire implementation of your pipelined processor, including the given circuits and ROMs, to your assignment repo. Your top-level processor must be named project07.dig. The Hazard Unit gives the processor the ability to automatically handle the hazard conditions described in the following test cases.","url":"/assignments/project07.html","@type":"BlogPosting","headline":"Project07","dateModified":"2022-05-12T18:45:50+00:00","datePublished":"2022-05-12T18:45:50+00:00","author":{"@type":"Person","name":"Phil Peterson"},"mainEntityOfPage":{"@type":"WebPage","@id":"/assignments/project07.html"},"@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="/feed.xml" title="CS 315 - Computer Architecture" /><head>
+  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">  
+</head>
+</head>
+<body><header class="site-header">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/">CS 315 - Computer Architecture</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/help/">Getting Help</a><a class="page-link" href="/syllabus/">Syllabus</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper"><h1 class="page-heading">Project07</h1><div class="container">Due: 
+    <span class="due-date">
+      Thu, May 12, 2022 at 11:59 PM 
+    </span>to <a href="https://classroom.github.com/a/kCJjmW4E">Github Classroom Assignment</a><hr>
+  <section id="main_content">
+    <h2 id="requirements">Requirements</h2>
+<ol>
+  <li>For this project, you will start with a given, basic implementation of a pipelined processor. This is a 5-stage pipeline processor that includes pipeline registers between each stage. To execute code on this processor, code must contain <code class="language-plaintext highlighter-rouge">nop</code> (no operation) instructions between real instructions so that the register file is updated properly. We will learn how this processor works in class this week.</li>
+  <li>You will evolve the given implementation to include a Hazard Unit and data path additions which provides support for Register Forwarding for data dependencies, Stalling for memory reads, and Flushing the pipeline to handle branches. The ultimate goal is to remove the need for <code class="language-plaintext highlighter-rouge">nop</code> instructions to properly execute code and to allow the pipeline to run at the fastest rate possible.</li>
+  <li>You will commit the entire implementation of your pipelined processor, including the given circuits and ROMs, to your assignment repo. Your top-level processor must be named <code class="language-plaintext highlighter-rouge">project07.dig</code>.</li>
+  <li>
+    <p>The Hazard Unit gives the processor the ability to automatically handle the hazard conditions described in the following test cases.</p>
+
+    <p><strong>04-dp-fwd.s</strong></p>
+
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> main:
+     mov r1, #1
+     mov r2, #2
+     add r0, r1, r2   @ r0 should be 3
+     add r0, r0, #0   @ marker instruction
+</code></pre></div>    </div>
+    <p>This program illustrates a Data Hazard, since <code class="language-plaintext highlighter-rouge">r0</code> depends on the Writeback stage of the two immediate-form <code class="language-plaintext highlighter-rouge">mov</code> instructions. Your Hazard Unit will enable Register Forwarding so that the values of <code class="language-plaintext highlighter-rouge">r1</code> and <code class="language-plaintext highlighter-rouge">r2</code> are available when the <code class="language-plaintext highlighter-rouge">add</code> instruction begins the Execute stage</p>
+
+    <p><strong>05-ldr-stl.s</strong></p>
+
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> main:
+     mov r0, #0
+     mov r1, #1
+     str r1, [r0]
+     ldr r2, [r0]
+     add r0, r2, #1   @ r0 should be 2
+     add r0, r0, #0   @ marker instruction
+</code></pre></div>    </div>
+    <p>This program illustrates the need to Stall the pipeline, since the <code class="language-plaintext highlighter-rouge">add</code> instruction depends on the value loaded by the <code class="language-plaintext highlighter-rouge">ldr</code> instruction. Your Hazard Unit will enable a Stall in the appropriate Pipeline Registers.</p>
+
+    <p><strong>06-blbx-fls.s</strong></p>
+
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> main:
+     mov r0, #2
+     bl foo
+     add r0, r0, #0  @ marker instruction
+ foo:
+     add r0, r0, #4  @ r0 should be 6
+     bx lr
+</code></pre></div>    </div>
+    <p>This program illustrates a Control Hazard. Since the <code class="language-plaintext highlighter-rouge">bl</code> instruction means that subsequent instructions (the marker) should not be executed, we need to Flush the pipeline.</p>
+  </li>
+</ol>
+
+<h2 id="given">Given</h2>
+
+<ol>
+  <li>You may use any of the circuits shown in lecture, including the pipeline registers and disassembly circuit.</li>
+  <li><code class="language-plaintext highlighter-rouge">project07-given</code> includes a simplified single-cycle processor including:
+    <ol>
+      <li>Support for RAM including <code class="language-plaintext highlighter-rouge">ldr(i)</code> and <code class="language-plaintext highlighter-rouge">str(i)</code></li>
+      <li>An implementation of the ASCII-based disassembler, including the decoder which outputs the inum to match the disassembler’s ROM.</li>
+      <li>Instruction memory, including assembly source and hex files, for:
+        <ol>
+          <li>Four programs which execute using <code class="language-plaintext highlighter-rouge">nop</code> instructions to manually avoid hazards</li>
+          <li>The three programs which require your Hazard Unit to execute correctly</li>
+        </ol>
+      </li>
+    </ol>
+  </li>
+  <li>You may use any of Digital’s built-in components, or your own if you prefer.</li>
+</ol>
+
+<h2 id="rubric">Rubric</h2>
+
+<p>80 pts: passes automated tests for the <code class="language-plaintext highlighter-rouge">04-dp-fwd</code> test case<br />
+90 pts: passes the automated tests <code class="language-plaintext highlighter-rouge">04-dp-fwd</code> and <code class="language-plaintext highlighter-rouge">05-ldr-stl</code> <br />
+100 pts: passes the automated tests for <code class="language-plaintext highlighter-rouge">04-dp-fwd</code>, <code class="language-plaintext highlighter-rouge">05-ldr-stl</code>, and <code class="language-plaintext highlighter-rouge">06-blbx-fls</code></p>
+
+<h2 id="extra-credit">Extra Credit</h2>
+
+<ol>
+  <li>1 pt: Add support for conditional branch, providing a test program to demonstrate your work</li>
+</ol>
+
+
+  </section>
+</div>
+
+      </div>
+    </main>
+
+  </body>
+
+</html>

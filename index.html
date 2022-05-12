@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.7.1 -->
+<title>CS 315 - Computer Architecture</title>
+<meta name="generator" content="Jekyll v4.2.1" />
+<meta property="og:title" content="CS 315 - Computer Architecture" />
+<meta name="author" content="Phil Peterson" />
+<meta property="og:locale" content="en_US" />
+<meta property="og:site_name" content="CS 315 - Computer Architecture" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="CS 315 - Computer Architecture" />
+<script type="application/ld+json">
+{"url":"/","@type":"WebSite","headline":"CS 315 - Computer Architecture","author":{"@type":"Person","name":"Phil Peterson"},"name":"CS 315 - Computer Architecture","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="/feed.xml" title="CS 315 - Computer Architecture" /><head>
+  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">  
+</head>
+</head>
+<body><header class="site-header">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/">CS 315 - Computer Architecture</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/help/">Getting Help</a><a class="page-link" href="/syllabus/">Syllabus</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper"><div class="home">
+  
+
+
+  <h1 class="page-heading">Timeline</h1>
+	<table>
+    <colgroup>
+      <col span="1" style="width:20%">
+      <col span="1" style="width:50%">
+      <col span="1" style="width:30%">
+    </colgroup>
+    <tr>
+      <th>Date</th>
+      <th>Topics</th>
+      <th>Materials</th>
+    </tr>
+      <tr>
+        <td>
+          May 12, 2022
+        </td>
+        <td>
+          Project07 Review, Real Processors
+ 
+        </td>
+        <td>
+            <a href="https://drive.google.com/file/d/1JFFjojHbqhCBZiLQ_U2nNvBdg1SxwNuU/view?usp=sharing">notes-01</a>
+            <a href="https://usfca.zoom.us/rec/share/xuuhkYGF31F-PMbpOD8g6Wwm_Lb2VyHmQzfkhsggGScQ14EICzrv1a6ghqWLd5Pq._6yzaPj6ZZyNuZAG">video-01</a>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          May 10, 2022
+        </td>
+        <td>
+          Project07, Memory Stalls, Branch Flushing
+ 
+        </td>
+        <td>
+            <a href="https://drive.google.com/file/d/1Y-XWf0jkLctBbv5aBpvVgsbQyBMHcgND/view?usp=sharing">notes-01</a>
+            <a href="https://usfca.zoom.us/rec/share/0AepHSbtesqxpeXce6WZ9wdpU0KQaSYfctxfZktXqDVTsjrBjRD2cjVhTd6A26Qk.To-z1ZtXGKbOEkn5">video-01</a>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          May 5, 2022
+        </td>
+        <td>
+          Hazards, Project07
+ 
+        </td>
+        <td>
+            <a href="https://drive.google.com/file/d/1YX1yDMNv3TovMLOGuo3kC43sBCMY_Ub1/view?usp=sharing">notes-01</a>
+            <a href="https://usfca.zoom.us/rec/share/uwoy7Dc4tDv-Djt-PuSpLQgAHYQQyiE8WJ1ddmeMSUNOPYYjO9x6aKgfKRtaqN4U.db0WQhuDll_rFFxi">video-01</a>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          May 4, 2022
+        </td>
+        <td>
+          Pipelining. Assigned <a href="assignments/project07.html">project07</a> due 5/12
+ 
+        </td>
+        <td>
+            <a href="https://drive.google.com/file/d/1xeyPfo4F-a6qm3V4UgG-afrxxCJtXjNV/view?usp=sharing">notes-01</a>
+            <a href="https://usfca.zoom.us/rec/share/i3qXT7GPD8fDy8G5O9QU3O35GYn3rWBcTbcWw1gTFAVuXRyrbXHCStfTBUH2BVKc.jBr6NrFCIltLCyvK">video-01</a>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          Apr 28, 2022
+        </td>
+        <td>
+          Conditional Execution, Memory Control Flow, RR2/RD2, Debugging Checklist
+ 
+        </td>
+        <td>
+            <a href="https://drive.google.com/file/d/1wx7xzdSrGxBPcXpr9TW8-c0T1QJI2rk8/view?usp=sharing">notes-01</a>
+            <a href="https://usfca.zoom.us/rec/share/5FMSVkzWtqaIJvllSMvBFkgv_maHn7Vd11z7jJuQDjeKoiZcr38_Nns0tSv_8Ihe.SPfvmGxDtz0QMdNN">video-01</a>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          Apr 27, 2022
+        </td>
+        <td>
+          Simulating the stack
+ 
+        </td>
+        <td>
+            <a href="https://drive.google.com/file/d/1N0dxQdV3Dw4xWtYuRe-3eRxyfhvBsScP/view?usp=sharing">notes-01</a>
+            <a href="https://usfca.zoom.us/rec/share/fHdcXmKbTcdgElD4L0LXw9XkyB69q6uj9UN3Pcq1MkEzt8AwtPRt3B0nsj7ASfih.6UL0mKRz73HVQxh2">video-01</a>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          Apr 26, 2022
+        </td>
+        <td>
+          Simulating the stack, Conditional Execution, Assigned <a href="assignments/project06.html">project06</a> due 5/2
+ 
+        </td>
+        <td>
+            <a href="https://drive.google.com/file/d/1-YykfmG2_1ACbGwywyCCXw3mZKIongD3/view?usp=sharing">notes-01</a>
+            <a href="https://usfca.zoom.us/rec/share/n10h2_djF-fDUt3mVTDikmUJCeTzhNdb5Q-wZY_Ib-CvhiLTcxZirN9jEaYRCbwf.NVVQ_yMw4L_EJlkb">video-01</a>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          Apr 21, 2022
+        </td>
+        <td>
+          Control bits, Understanding control flow
+ 
+        </td>
+        <td>
+            <a href="https://usfca.zoom.us/rec/share/haRHd4NIWvIxX9p0IHKN38DsvCFhB58Qc3Y3Tx2yr02WAQQuDfESPxcgJDENy0c3.ehVBVB_-1W7QJd3a">video-01</a>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          Apr 20, 2022
+        </td>
+        <td>
+          Lab07 control signals
+ 
+        </td>
+        <td>
+            <a href="https://usfca.zoom.us/rec/share/-vNtt4g7oUOnZ6KqV8yyV39DffkyXQNOSpUZUYofcVotjaM3yXX9_CWkSUjCdP4.VCpd7s7vPKMDKruv">video-01</a>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          Apr 19, 2022
+        </td>
+        <td>
+          Extender, Memory, Decoder. Assigned <a href="assignments/lab07.html">lab07</a> due 4/25
+ 
+        </td>
+        <td>
+            <a href="https://drive.google.com/file/d/18tJCEi-a6SnNSbIn6TnDoJ6_sNOoVgrn/view?usp=sharing">notes-01</a>
+            <a href="https://usfca.zoom.us/rec/share/xc-4AkWEdhH_YnDPpUjtVvYq6FEIFE7M8W0f4y2U1qJ0lXVMjX5eQDSrQW2rvT5w.mS-GIZbO_kOa6NNs">video-01</a>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          Apr 14, 2022
+        </td>
+        <td>
+          Reg File, ALU, Pipelines, Extension Unit
+ 
+        </td>
+        <td>
+            <a href="https://drive.google.com/file/d/1DsSuAYSxKoGCEHJrnk7wO3jGLAcp13au/view?usp=sharing">notes-01</a>
+            <a href="https://usfca.zoom.us/rec/share/F4FwY_uQt4rBBwvh88zBLr1D535cTuRv_wgZ_Vhr4dhi3RD88-OhYFD-ThuvcS4f.wqgSLfiMapVC4eeS">video-01</a>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          Apr 13, 2022
+        </td>
+        <td>
+          Regs, ALU, Register File
+ 
+        </td>
+        <td>
+            <a href="https://drive.google.com/file/d/1du_2OBI_HRY0V6v6v2MtVtsslpdbPThh/view?usp=sharing">notes-01</a>
+            <a href="https://usfca.zoom.us/rec/share/9RkmTmo_U9zKV18P2q7VZOWQVoamsvkIDjEPuHOsd3ByEY3gCLrp49L_03o27ZKx.xBLO1JAGGoUt08HZ">video-01</a>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          Apr 12, 2022
+        </td>
+        <td>
+          Moores Law, Processor Components, assigned <a href="assignments/lab06.html">lab06</a> due 4/18
+ 
+        </td>
+        <td>
+            <a href="https://drive.google.com/file/d/1gCaP8zMn7dCQ3sgA2JmhLSvwu-3DnMvz/view?usp=sharing">notes-01</a>
+            <a href="https://usfca.zoom.us/rec/share/RXcHvswBzLoE7ZWXI2LH8hTqcwqldscdooNMfWdve4jzMidBZ4zEAQosJSR4uOS4.v8ffVr0alfWzDuMK">video-01</a>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          Apr 7, 2022
+        </td>
+        <td>
+          Counters, Roms, Clock demo, Project05
+ 
+        </td>
+        <td>
+            <a href="https://drive.google.com/file/d/1z4kVHs0yRnP7gwUt0uaNW3N4g-uRJm6H/view?usp=sharing">notes-01</a>
+            <a href="https://usfca.zoom.us/rec/share/6J0ipKsm3eH2aKU2dtcM3PaxNsDeoAJ3zo_9hChQX4gU3HW5ZwM-1Lvjx9_O0i6t.03oWq9cScK0vbQsH">video-01</a>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          Apr 6, 2022
+        </td>
+        <td>
+          Counters, Encoder/Decoder, Making Roms
+ 
+        </td>
+        <td>
+            <a href="https://drive.google.com/file/d/1YQKqZ0kyaFm0qcymidp_UUaBXd2WlYO-/view?usp=sharing">notes-01</a>
+            <a href="https://usfca.zoom.us/rec/share/54H9i0gmj2usWWwelvQvrjaf5hJlDgaO5o0mW5wHGQLRnZk6jMJlcg2ioTvmPI6Y.plV70b3lfliTCWDT">video-01</a>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          Apr 5, 2022
+        </td>
+        <td>
+          Sequential Logic, assigned <a href="assignments/project05.html">project05</a> due 4/11
+ 
+        </td>
+        <td>
+            <a href="https://drive.google.com/file/d/1yzU2yOshbHsMBEN-hJZU00D1ZM4Zffh8/view?usp=sharing">notes-01</a>
+            <a href="https://usfca.zoom.us/rec/share/CqscNA0qHy3tVxNpemZcRYKTA7CLWsRMB2mGkWEJY-Qdr2AyBkCxVHwNBmyG48Iq.1EZeGxj0sKdLsFs5">video-01</a>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          Mar 31, 2022
+        </td>
+        <td>
+          XNOR, Multiplexors, Functional Units
+ 
+        </td>
+        <td>
+            <a href="https://drive.google.com/file/d/1NiRjYvAT_HyVSAU3g79_82WdS7qq2Zge/view?usp=sharing">notes-01</a>
+            <a href="https://usfca.zoom.us/rec/share/Ld3umtndaV4PRhstzCbOipUjU_8PVjvgOhUj9gu4GArY1JON313v1z2EBq8wN9Gg.18pUJSfDwYciEqlE">video-01</a>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          Mar 30, 2022
+        </td>
+        <td>
+          Digital, Boolean Algebra
+ 
+        </td>
+        <td>
+            <a href="https://drive.google.com/file/d/1OuGYWKfbFCY27eN7dTpr2-LIqR7pF2mA/view?usp=sharing">notes-01</a>
+            <a href="https://usfca.zoom.us/rec/share/B33to_2tHGHT2ZY6CdOEfeZrHuKq5fj0yKIAxyJ5Dr0ieAwtOzfONIaAUJrCmVpz.1s63TgmJh-etpFKb">video-01</a>
+            <a href="https://drive.google.com/file/d/19BN2g0EHM8n__767t7OcwnnbNHeaqJSf/view?usp=sharing">notes-02</a>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          Mar 29, 2022
+        </td>
+        <td>
+          Digital Design intro, assigned <a href="assignments/lab05.html">lab05</a> due 4/4
+ 
+        </td>
+        <td>
+            <a href="https://drive.google.com/file/d/1BLn4ShmKGfRgeqGIAzpBpnUKqDcbLhO-/view?usp=sharing">notes-01</a>
+            <a href="https://usfca.zoom.us/rec/share/9lEv25Zeq8vKwra5FlVIGOpjwbZKJnCZEGNkK7E7VHK8ZCPXH-qQqht9Rrxst1vT.u3gWIUSnBN-wlUv_">video-01</a>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          Mar 23, 2022
+        </td>
+        <td>
+          Project04, Branches, Cache, Debugging
+ 
+        </td>
+        <td>
+            <a href="https://drive.google.com/file/d/1ED5foEKnilntUr-2U_AGDjzvLtqV3iQj/view?usp=sharing">notes-01</a>
+            <a href="https://usfca.zoom.us/rec/share/C6eKFdpTWKKP0XyRipQeBiDWO-2YcJIMj6gZ-i24YIz90HsPetyyajlP8MOlJK0L.TPqpnZJ1pqxhwbi5">video-01</a>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          Mar 22, 2022
+        </td>
+        <td>
+          Branch Target, Memory, Set Associative Cache
+ 
+        </td>
+        <td>
+            <a href="https://drive.google.com/file/d/1AuasKJT_euPJnZPqM87dGBePO-8iucnZ/view?usp=sharing">notes-01</a>
+            <a href="https://usfca.zoom.us/rec/share/S5cOlNiL4_PoD_z3BoUB5cRVzE3L1NfVXat4NqdOeU0G9xmuDQB1D2IVT19JJgNU.Y0nImoxGp3OH4KL-">video-01</a>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          Mar 10, 2022
+        </td>
+        <td>
+          Cache, Direct-Mapped, Fully Associative, Set Associative
+ 
+        </td>
+        <td>
+            <a href="https://drive.google.com/file/d/1FYs06ZwFLluby-hASiYeNm9tP0qR9S8o/view?usp=sharing">notes-01</a>
+            <a href="https://usfca.zoom.us/rec/share/VLYlJgrmNU1Kz5FCGMxuLSgtbT7GfQBba1SqazEPyRTIi62vAEA4df-_2uTFF_t1.tBBlrDCXcWZLaklp">video-01</a>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          Mar 9, 2022
+        </td>
+        <td>
+          Debugging, Memory, and Stack
+ 
+        </td>
+        <td>
+            <a href="https://drive.google.com/file/d/1MZ6KKYd6uAyjxhK5ekzIF3zr8PrGQQoS/view?usp=sharing">notes-01</a>
+            <a href="https://usfca.zoom.us/rec/share/6kdxviLi-JpyZNS_2a8jOfJUL0OCea9VXstpNI9PGETe5o62AoOdIN7mC4OXp25n.zu5pRTvsCo1OvkjD">video-01</a>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          Mar 8, 2022
+        </td>
+        <td>
+          Branch target, shift, memory target, assigned <a href="assignments/project04.html">project04</a> due Wed 3/22.
+ 
+        </td>
+        <td>
+            <a href="https://drive.google.com/drive/u/1/folders/1f9CRg1gYhJQhzqKI4uK26YTq_4Jp6tjO">notes-01</a>
+            <a href="https://usfca.zoom.us/rec/share/SM4DDxUXuuGX-qGXvRkAHRfpR_UbeEe3VTGsixnh4I2PyQjLza8Gzqw036WVKA8f.TdAbhhZPxx6puj0Z">video-01</a>
+            <a href="https://github.com/cs315-s22/inclass/tree/main/week07/encoding">code-01</a>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          Mar 3, 2022
+        </td>
+        <td>
+          Arm Emulator, Op. Codes, Cond. Codes
+ 
+        </td>
+        <td>
+            <a href="https://drive.google.com/file/d/1VznE1hYsCCjJJ4G-Z17Ucs2BcQL1MD09/view?usp=sharing">notes-01</a>
+            <a href="https://usfca.zoom.us/rec/share/6DzM2jpPo1jqb7AA_ylZG5NmXc5AqkarfIfdm5IabrcCUs38NEL4eCeG5RGyQKYx.g88Npx1E_FB_7EdQ">video-01</a>
+            <a href="https://github.com/cs315-s22/inclass/tree/main/week06/armemu">code-01</a>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          Mar 2, 2022
+        </td>
+        <td>
+          assigned <a href="assignments/lab04.html">lab04</a>, due 3/7. <a href="https://drive.google.com/file/d/1XfviCcmE5vNLZ1yHHXnWLrx1wS_uZAdm/view?usp=sharing">ARM instruction set manual</a>
+ 
+        </td>
+        <td>
+            <a href="https://drive.google.com/file/d/17porZVVyOC3CZjzwK81-3ifl5eubo3F7/view?usp=sharing">notes-01</a>
+            <a href="https://usfca.zoom.us/rec/share/pjrrzsCyL5LYUBlha2OFH2TwRuYF5H_0oYf0vucFGhRp_e8Rip3ijvwOoqmHMvcy.WAI91nC1hpUbojPq">video-01</a>
+            <a href="https://github.com/cs315-s22/inclass/tree/main/week06/armemu">code-01</a>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          Feb 24, 2022
+        </td>
+        <td>
+          Shifting, Merge Sort, Machine code
+ 
+        </td>
+        <td>
+            <a href="https://drive.google.com/file/d/1hpTr_Fq1BzYQb-xQFn44iwQIFI6HyKwd/view?usp=sharing">notes-01</a>
+            <a href="https://usfca.zoom.us/rec/share/64BFH61dr0yqZlI_I9gbQi9zIwGrD9AXDxHlc-dA3dd7m9jejMuphSVga5sDlaMh.lNBXGaw5uIM5jHwy">video-01</a>
+            <a href="https://github.com/cs315-s22/inclass/tree/main/week05/shifting">code-01</a>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          Feb 23, 2022
+        </td>
+        <td>
+          More bitwise arithmetic, sign extension, and two’s complement
+ 
+        </td>
+        <td>
+            <a href="https://drive.google.com/file/d/1ix_nG2-M9dcgUvFjg7Ux5QrG5N1sdAU0/view?usp=sharing">notes-01</a>
+            <a href="https://usfca.zoom.us/rec/share/crX8_NQ91ceFsJp90LScQt7Tvvf_cfxZsX0x2gU0_jG_VhPHDqm5GQ2tfLxV_zo.te1qPG8tGkK9SHZ9">video-01</a>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          Feb 22, 2022
+        </td>
+        <td>
+          Lab03 review, bitwise arithmetic, sign extension, assigned <a href="assignments/project03.html">project03</a> due 2/28
+ 
+        </td>
+        <td>
+            <a href="https://drive.google.com/file/d/1gDvN-dUSXuBC9z5TjT_yBc3MfsVHFBQC/view?usp=sharing">notes-01</a>
+            <a href="https://usfca.zoom.us/rec/share/akCSlrKuU-v6by4v1-jJna-GCHdTG124IFkoqng11McMp7AgcSDFgZrjPfJjHGNP.wZ5Xxm9_QOPSBktx">video-01</a>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          Feb 17, 2022
+        </td>
+        <td>
+          find_max_index Recursive Implementation
+ 
+        </td>
+        <td>
+            <a href="https://drive.google.com/file/d/1-mYwxsMU36RwK2NTdDMiiQcvmbIV1Deo/view?usp=sharing">notes-01</a>
+            <a href="https://usfca.zoom.us/rec/share/UOuWqsmg_LfJvHRzPZDKJzpNclQ9QqcA8H2NIHSdyB64cUmMPYftUAi_bKCU-eSo.2yqY-xCcV_FhQdYR">video-01</a>
+            <a href="https://github.com/cs315-s22/inclass/tree/main/week04/fmi_rec">code-01</a>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          Feb 16, 2022
+        </td>
+        <td>
+          Recursion, Stack, LR
+ 
+        </td>
+        <td>
+            <a href="https://drive.google.com/file/d/1SvuNNaE2MljtvgFTfIPrqareE5PS1IeR/view?usp=sharing">notes-01</a>
+            <a href="https://usfca.zoom.us/rec/share/deuF7sTV9FEAwwq5Nr626Nvo5u4E90ZJvw2ILw5dIOAo67-Y7RAHOFyLaZybqJ9D.tFscQIbDz1kZi6Hw">video-01</a>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          Feb 15, 2022
+        </td>
+        <td>
+          Project02 review, recursion, assigned <a href="assignments/lab03.html">lab03</a> due 2/21
+ 
+        </td>
+        <td>
+            <a href="https://drive.google.com/file/d/1_9LlvxxgxYvzOMTqD4BrVy2dDAOm4CFS/view?usp=sharing">notes-01</a>
+            <a href="https://usfca.zoom.us/rec/share/NSsQFtWckdgVUhFy75OyQJNVJ3LckidZ6Kaljw477PJ8Dz8G-Uf6RwX-ASGSrvyF.M0OFr3DLzK1bS-KT">video-01</a>
+            <a href="https://github.com/cs315-s22/inclass/tree/main/week04/fact">code-01</a>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          Feb 10, 2022
+        </td>
+        <td>
+          ARM Functions, Memory Offsets
+ 
+        </td>
+        <td>
+            <a href="https://drive.google.com/file/d/11XXxEfaesmx9AO7MWD4BooLs2abyqdMe/view?usp=sharing">notes-01</a>
+            <a href="https://usfca.zoom.us/rec/share/wXwQxvAdbcHJTiARzn5QHI7DQW2DiLQnXOjcc8gmaBF9tKcCFJo61qMYwAJpgyUC.6tJI1oS74ANC5SVb">video-01</a>
+            <a href="https://github.com/cs315-s22/inclass/tree/main/week03/countc">code-01</a>
+            <a href="https://usfca.zoom.us/rec/share/Odmc4yOWMT5RjL7dLpucK81_sg9aoc1EuMVRPAYhktMpOA2hSycZN49J4sMTErs.Eb_q-ZbJqm5Qk4vS">video-02</a>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          Feb 9, 2022
+        </td>
+        <td>
+          Indexing modes, Branch and Link
+ 
+        </td>
+        <td>
+            <a href="https://drive.google.com/file/d/17zSuh4eqVI8oVCvHOY78Qr7AKfJt4CNP/view?usp=sharing">notes-01</a>
+            <a href="https://usfca.zoom.us/rec/share/RPNAmhLVUHvtlAapgbqEL-DiW4ugrCigeebHl1_Co44_t1CcyB04VCK3dU8yWQLN.XyTLtc1yL8pkpZ_c?startTime=1644508859000">video-01</a>
+            <a href="https://github.com/cs315-s22/inclass/tree/main/week03/strlen">code-01</a>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          Feb 8, 2022
+        </td>
+        <td>
+          Memory (load/store), assigned <a href="assignments/project02.html">project02</a> due 2/14
+ 
+        </td>
+        <td>
+            <a href="https://drive.google.com/file/d/1cr1cFjNdlA-L98D69Tb6BdBOusreqcwU/view?usp=sharing">notes-01</a>
+            <a href="https://usfca.zoom.us/rec/share/jNZB5e-9jEf41y4intMuUdECzWhjKHJBfgiGvfe95c7jMxWf4FkpGFkzaY5pqXT0.jxa8xTsD-X1oKBpA">video-01</a>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          Feb 3, 2022
+        </td>
+        <td>
+          ARM Control Flow and Registers
+ 
+        </td>
+        <td>
+            <a href="https://drive.google.com/file/d/1dKgnBcfvVAIKDqZXVhEwgRRh1p-z5x9L/view?usp=sharing">notes-01</a>
+            <a href="https://usfca.zoom.us/rec/share/AFUKxBkO5Fac5v4SuFomUsL0IlUo6TpXqstue56GlmJYZ5YbAhM3ej0si5rgnO3p.yIRNHxyNlc-DX3o9">video-01</a>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          Feb 2, 2022
+        </td>
+        <td>
+          Conditional execution, <a href="https://cs221.cs.usfca.edu/slides/autograder.html">autograder</a>, assigned <a href="assignments/lab02.html">lab02</a> due Mon 2/7
+ 
+        </td>
+        <td>
+            <a href="https://drive.google.com/file/d/1Emp_W0udIyRCiltTlqMU4iH3-eURfeFu/view?usp=sharing">notes-01</a>
+            <a href="https://usfca.zoom.us/rec/share/eqW23GlVB8EcPVnyFjqaBFMCE-eU4TGtEptUTDPqWiO6zKYao4OEZ-n-p2OPymqW.pB1vnNFEHRxKVVud">video-01</a>
+            <a href="https://github.com/cs315-s22/inclass/tree/main/week02/loop">code-01</a>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          Feb 1, 2022
+        </td>
+        <td>
+          Reviewed Lab01, <a href="https://drive.google.com/drive/u/0/folders/1HovLgEAZp9FabgwtIGwE551gFmDs8Yvw">ARM intro</a>, <a href="slides/make.html">make</a>
+ 
+        </td>
+        <td>
+            <a href="https://usfca.zoom.us/rec/share/lFvEw7GAD_1P4m0-3O7OtPQ88dXdZP-hLQYUTK_n6r2z9FWoLyXROO5uV2KY3WYB.2CkvIppq-dmUCgbN">video-01</a>
+            <a href="https://github.com/cs315-s22/inclass/tree/main/week02/add2">code-01</a>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          Jan 27, 2022
+        </td>
+        <td>
+          Pi setup and more discussion on number bases.
+ 
+        </td>
+        <td>
+            <a href="https://drive.google.com/file/d/1ErdfeFgQa2-9d5cfCNqhu4fdO_wxtTMv/view?usp=sharing">notes-01</a>
+            <a href="https://usfca.zoom.us/rec/share/QSV5Eglu8RrLJ4N5_8Nb6caPoSE-V2NQLoro6qS60jjgGKfznPIgmdr_SQJQUfLG.lasydfIv4tdjweYO">video-01</a>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          Jan 26, 2022
+        </td>
+        <td>
+          Number bases (binary and hex). Assigned <a href="assignments/lab01.html">Lab01</a> due Jan 31
+ 
+        </td>
+        <td>
+            <a href="https://drive.google.com/file/d/1W5r0KRfhv1A8R_O4uNFj5DBWZclCPzK5/view?usp=sharing">notes-01</a>
+            <a href="https://usfca.zoom.us/rec/share/HDPGZ0jqoQ8CxjkRHPX6zOoLNwkrkd4x2orVKwIR25x9WsjcC-lbCsOeKSIPelA8._Uf1zL2tgu72IBiz">video-01</a>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          Jan 25, 2022
+        </td>
+        <td>
+          Course intro. <a href="assignments/project01.html">Project01 (Pi Setup)</a> due in lab on Wed Feb 9
+ 
+        </td>
+        <td><a href="slides/course-intro.html" target="_new">slides</a>
+            <a href="https://usfca.zoom.us/rec/share/asVvHj1-vjsgauAaRnDjmsYAxcwUvJb2j7SI_WUl3haKvRIZG8OvCHFqo_umGiQ.yRsqi_1IX4OxEf5O?startTime=1643126164000">video-01</a>
+            <a href="https://echo360.org/media/f0a46205-7caf-4814-8905-79142eaff8fb">video-02</a>
+        </td>
+      </tr>
+	</table>
+
+
+</div>
+
+      </div>
+    </main>
+
+  </body>
+
+</html>

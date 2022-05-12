@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.7.1 -->
+<title>Project06 Part 3 | CS 315 - Computer Architecture</title>
+<meta name="generator" content="Jekyll v4.2.1" />
+<meta property="og:title" content="Project06 Part 3" />
+<meta name="author" content="Phil Peterson" />
+<meta property="og:locale" content="en_US" />
+<meta property="og:site_name" content="CS 315 - Computer Architecture" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2022-05-12T18:45:50+00:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Project06 Part 3" />
+<script type="application/ld+json">
+{"url":"/assignments/project06-part-3.html","@type":"BlogPosting","headline":"Project06 Part 3","dateModified":"2022-05-12T18:45:50+00:00","datePublished":"2022-05-12T18:45:50+00:00","author":{"@type":"Person","name":"Phil Peterson"},"mainEntityOfPage":{"@type":"WebPage","@id":"/assignments/project06-part-3.html"},"@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="/feed.xml" title="CS 315 - Computer Architecture" /><head>
+  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">  
+</head>
+</head>
+<body><header class="site-header">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/">CS 315 - Computer Architecture</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/help/">Getting Help</a><a class="page-link" href="/syllabus/">Syllabus</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper"><h1 class="page-heading">Project06 Part 3</h1><div class="container"><hr>
+  <section id="main_content">
+    
+<p><img src="/assets/img/project06/shift_unit.png" alt="shift-unit" /></p>
+
+<p><strong>Shift Unit</strong></p>
+
+<p>To support the implementation of <code class="language-plaintext highlighter-rouge">lsl</code>, <code class="language-plaintext highlighter-rouge">lsr</code>, and <code class="language-plaintext highlighter-rouge">asr</code> as well as SDT with a shift, e.g., <code class="language-plaintext highlighter-rouge">ldr r0, [r1, r2, LSL #2]</code> we will need a shift unit. The shift unit will have three inputs (<code class="language-plaintext highlighter-rouge">iw</code>, <code class="language-plaintext highlighter-rouge">Rm</code>, <code class="language-plaintext highlighter-rouge">Rs</code>, <code class="language-plaintext highlighter-rouge">SHsel</code>) and one output <code class="language-plaintext highlighter-rouge">R</code>:</p>
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">iw</code> - The 32 bit instruction word. We need bits 4-11 which will be extracted in the Shift Unit.</li>
+  <li><code class="language-plaintext highlighter-rouge">D</code> - The value to be shifted.</li>
+  <li><code class="language-plaintext highlighter-rouge">Rs</code> - The shift amount if a register shift amount is selected</li>
+  <li><code class="language-plaintext highlighter-rouge">SHsel</code> - Choose to propagate <code class="language-plaintext highlighter-rouge">D</code> unchanged or <code class="language-plaintext highlighter-rouge">D</code> shifted as determine by bits 4-11.</li>
+  <li><code class="language-plaintext highlighter-rouge">R</code> - The output value</li>
+</ul>
+
+<p>You will put the shift unit in front of the <code class="language-plaintext highlighter-rouge">ALUsrcB</code> MUX.</p>
+
+<p><strong>Conditional Execution</strong></p>
+
+<ol>
+  <li>In order to support conditional branch instructions (e.g. <code class="language-plaintext highlighter-rouge">beq</code>, <code class="language-plaintext highlighter-rouge">bne</code>, <code class="language-plaintext highlighter-rouge">bge</code>, etc.) we will create a Control Unit that embeds our decoder.</li>
+  <li>The Decoder identifies instructions and sets the output control lines.</li>
+  <li>The conditional branch circuitry added below is incomplete as well as is the decoder. You will add support for other cases as needed by your Project03 functions.</li>
+  <li>We will use a 4-bit register to store the CPSR bits which are the result of the subtraction operation in the ALU.</li>
+  <li>Recall that although the ARM architecture permits conditional execution of all instructions, you are only required to implement conditional branch instructions.</li>
+</ol>
+
+<p><img src="/assets/img/project06/condex.png" alt="condex" /></p>
+
+<p>To support conditional execution:</p>
+<ol>
+  <li>We need a new output from the Main Decoder which determines whether we are executing a <code class="language-plaintext highlighter-rouge">cmp</code> instruction</li>
+  <li>When executing a <code class="language-plaintext highlighter-rouge">cmp</code> instruction, the <code class="language-plaintext highlighter-rouge">EN</code> input to the CPSR register will be set to 1</li>
+  <li>The splitter extracts the <code class="language-plaintext highlighter-rouge">COND</code> bits from bits 28-31 of the instruction word</li>
+  <li>The comparators for <code class="language-plaintext highlighter-rouge">AL</code> (always) and <code class="language-plaintext highlighter-rouge">EQ</code> (if equal) look for the condition codes shown in the Instruction Set Manual</li>
+  <li>If the OR gate outputs 1, then the <code class="language-plaintext highlighter-rouge">PCsel</code> output is 1. If <code class="language-plaintext highlighter-rouge">PCsel</code> is 1, we will calculate PC + branch offset. If <code class="language-plaintext highlighter-rouge">PCsel</code> is 0, we will simply move to the next instruction, PC+4</li>
+</ol>
+
+<p>The key intuition here is that to ignore an instruction we simply don’t update the state which would have been changed by the instruction.</p>
+
+<p>This will be useful if you wish to support conditional execution of other instructions besides branch. The instruction executes, but its results are ignored, as though it never happened.</p>
+
+<p><strong>Using a Decode ROM</strong></p>
+
+<p>In Part 2, we showed how to generate the control bits using a multiplexer fed by constant values containing the control bits as a 15-bit value.</p>
+
+<p>It’s more concise to put the control bits in a ROM, and use the output of the Priority Encoder to index the ROM. Therefore each instruction decoded is an address, and the value at that ROM address is the 15-bit value containing the control bits. If your decoder has 32 or less outputs, your ROM will need 5 address bits (2^5 = 32). Your ROM will need enough data bits to hold all of the control bits.</p>
+
+<p>To create the data in the ROM, you can copy/paste the concatenated control bits from your spreadsheet into a <code class="language-plaintext highlighter-rouge">.hex</code> file, and load that into your ROM. While you could just type directly into the ROM’s data editor, we suggest creating a <code class="language-plaintext highlighter-rouge">.hex</code> file to minimize work when you add control bits or find bugs in your spreadsheet. Example of <code class="language-plaintext highlighter-rouge">.hex</code> file format:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>v2.0 raw
+8000
+9600
+50A0
+D0AC
+100
+</code></pre></div></div>
+
+<p><img src="/assets/img/project06/decode_rom.png" alt="decode-rom" /></p>
+
+<p>We provide you with a Python script (<code class="language-plaintext highlighter-rouge">mkdecoderom.py</code>) that makes is easy to create the .hex for the decode ROM. First, create a file that contains the binary versions of the output control bits from your spreadsheet. You can create the decode ROM hex file like this:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ python3 mkdecoderom.py &gt; decode_rom.hex
+&lt;paste your output control bits column here&gt;
+^D
+$
+</code></pre></div></div>
+
+  </section>
+</div>
+
+      </div>
+    </main>
+
+  </body>
+
+</html>

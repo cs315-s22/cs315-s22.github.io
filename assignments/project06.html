@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.7.1 -->
+<title>Project06 | CS 315 - Computer Architecture</title>
+<meta name="generator" content="Jekyll v4.2.1" />
+<meta property="og:title" content="Project06" />
+<meta name="author" content="Phil Peterson" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Requirements" />
+<meta property="og:description" content="Requirements" />
+<meta property="og:site_name" content="CS 315 - Computer Architecture" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2022-05-12T18:45:50+00:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Project06" />
+<script type="application/ld+json">
+{"description":"Requirements","url":"/assignments/project06.html","@type":"BlogPosting","headline":"Project06","dateModified":"2022-05-12T18:45:50+00:00","datePublished":"2022-05-12T18:45:50+00:00","author":{"@type":"Person","name":"Phil Peterson"},"mainEntityOfPage":{"@type":"WebPage","@id":"/assignments/project06.html"},"@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="/feed.xml" title="CS 315 - Computer Architecture" /><head>
+  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">  
+</head>
+</head>
+<body><header class="site-header">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/">CS 315 - Computer Architecture</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/help/">Getting Help</a><a class="page-link" href="/syllabus/">Syllabus</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper"><h1 class="page-heading">Project06</h1><div class="container">Due: 
+    <span class="due-date">
+      Mon, May 2, 2022 at 11:59 PM 
+    </span>to <a href="https://classroom.github.com/a/eInC4Lj2">Github Classroom Assignment</a><hr>
+  <section id="main_content">
+    <h2 id="requirements">Requirements</h2>
+
+<ol>
+  <li>You will implement a single-cycle microarchitecture for a subset of the ARMv7 instruction set architecture in Digital</li>
+  <li>You may use any of Digital’s library of components</li>
+  <li>You need to pass unit tests and complete program tests provided below.</li>
+  <li>You also need to get your Project02 <code class="language-plaintext highlighter-rouge">sort</code>/<code class="language-plaintext highlighter-rouge">find_max_index</code> and your Project03 <code class="language-plaintext highlighter-rouge">merge</code>/<code class="language-plaintext highlighter-rouge">merge_sort</code> implementations. Note that the complete program requirements are the same as for Project04.</li>
+  <li>The unit tests will help you incrementally build and test your processor.</li>
+  <li>We will provide a starter instruction memory with the unit tests and the complete program tests from Project04.</li>
+  <li>You will need to add your <code class="language-plaintext highlighter-rouge">sort</code>/<code class="language-plaintext highlighter-rouge">find_max_index</code> and <code class="language-plaintext highlighter-rouge">merge</code>/<code class="language-plaintext highlighter-rouge">merge_sort</code> to the given instruction memory.</li>
+</ol>
+
+<p>In order to make your programs runnable on your processor you must do the following:</p>
+<ol>
+  <li>You will add an assembly language main to set up at least five parameters for your functions</li>
+  <li>You will add the end marker (<code class="language-plaintext highlighter-rouge">add r0, r0, #0</code>) to indicate when the program should stop</li>
+  <li>Ensure that you do not have <code class="language-plaintext highlighter-rouge">.global</code> or <code class="language-plaintext highlighter-rouge">.func</code> directives in your programs</li>
+</ol>
+
+<p>Your processor implementation will include the following major sub-circuits:</p>
+<ol>
+  <li>The Program Counter (PC) will be one 32-bit register with enable (EN) and clear (CLR) inputs.</li>
+  <li>Machine code programs will be stored in a ROM components, just as we did in Project05. Like in Project05 your instruction memory will be able to select the program you want to execute.</li>
+  <li>A Register File that can support reading 3 registers in a single clock cycle: <code class="language-plaintext highlighter-rouge">RD0</code>, <code class="language-plaintext highlighter-rouge">RD1</code>, and <code class="language-plaintext highlighter-rouge">RD2</code>. This is a modified version of the Register File from Lab06 and Lab07.</li>
+  <li>The Arithmetic Logic Unit (ALU) will perform data processing tasks such as <code class="language-plaintext highlighter-rouge">add</code>, <code class="language-plaintext highlighter-rouge">sub</code>, <code class="language-plaintext highlighter-rouge">mul</code>, and <code class="language-plaintext highlighter-rouge">mov</code>. The ALU will also compute NZCV values for subtraction (as a result of a <code class="language-plaintext highlighter-rouge">cmp</code> instruction).</li>
+  <li>The Sign Extension Unit (Extender) will perform 8-bit zero extension, 12-bit zero extension, and 24 bit sign extension (and multiply by 4).</li>
+  <li>A Shift Unit (Shifter) will support shifts in <code class="language-plaintext highlighter-rouge">mov</code> and SDT instructions.</li>
+  <li>Data Memory. We will use a Digital RAM component for data memory. This will be used for stack memory by our test programs. We will configure the RAM component to hold 32 bit word values. This will make it easy to support <code class="language-plaintext highlighter-rouge">ldr</code> and <code class="language-plaintext highlighter-rouge">str</code>.</li>
+  <li>The Control Unit will decode machine code instructions and support conditional branch execution. As with Project05, the Control Unit will be the most complex part.</li>
+  <li>The Data Path will connect data between the various sub-circuits</li>
+  <li>The Control Path will connect the Control unit to various sub-circuits and multiplexers</li>
+</ol>
+
+<h2 id="given">Given</h2>
+<ol>
+  <li>We have compiled a three-part guide to completing this project: <a href="project06-part-1.html">part1</a>, <a href="project06-part-2.html">part2</a>, <a href="project06-part-3.html">part3</a></li>
+  <li>We will discuss the major sub-circuits in lecture and you will have hands-on time to develop and ask questions</li>
+  <li>The GitHub assignment has a starter repo which contains:
+    <ul>
+      <li>A starter instruction memory circuit</li>
+      <li>Assembly language implementations for test cases 0-18</li>
+      <li>A Python script for creating a decode ROM hex file</li>
+    </ul>
+  </li>
+</ol>
+
+<p>Unit  Tests</p>
+<ul>
+  <li>00-dp-reg</li>
+  <li>01-dp-imm</li>
+  <li>02-dp-lsl-imm</li>
+  <li>03-dp-lsr-reg</li>
+  <li>04-dp-asr-imm</li>
+  <li>05-mem-reg</li>
+  <li>06-mem-imm</li>
+  <li>07-mem-shift-reg</li>
+  <li>08-blbx</li>
+  <li>09-b</li>
+  <li>10-beq</li>
+  <li>11-ble</li>
+  <li>12-bgt</li>
+  <li>13-mul</li>
+  <li>14-rsb</li>
+</ul>
+
+<p>Complete Program Tests</p>
+<ul>
+  <li>15-quadratic</li>
+  <li>16-get_bitseq</li>
+  <li>17-max3</li>
+  <li>18-fib-rec</li>
+</ul>
+
+<p>Your Programs</p>
+<ul>
+  <li>19-sort_s (and find_max_index_s)</li>
+  <li>20-merge_sort_s (and merge_s)</li>
+</ul>
+
+<h2 id="rubric">Rubric</h2>
+<p>For interactive grading you should be able to run the autograder tests and manually execute your <code class="language-plaintext highlighter-rouge">sort_s</code> and <code class="language-plaintext highlighter-rouge">merge_sort_s</code> programs.</p>
+
+<ul>
+  <li>(30 points) Unit tests</li>
+  <li>(20 points) Complete program tests</li>
+  <li>(9 points) Your <code class="language-plaintext highlighter-rouge">sort_s</code></li>
+  <li>(9 points) Your <code class="language-plaintext highlighter-rouge">merge_sort_s</code></li>
+  <li>(10 points) Interactive grading question #1</li>
+  <li>(10 points) Interactive grading question #2</li>
+  <li>(12 points) Neatness, including
+    <ul>
+      <li>Your decoder PDF</li>
+      <li>A debug dashboard similar to (or better than) the given top-level circuits</li>
+      <li>A legend for program numbers so we can observe the results in interactive grading</li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="extra-credit">Extra Credit</h2>
+<p>(2 points) Add support for <code class="language-plaintext highlighter-rouge">ldrb</code> and <code class="language-plaintext highlighter-rouge">strb</code>. You need to demonstrate you can execute <code class="language-plaintext highlighter-rouge">is_pal_rec_s</code> and <code class="language-plaintext highlighter-rouge">to_upper_s</code>.</p>
+
+  </section>
+</div>
+
+      </div>
+    </main>
+
+  </body>
+
+</html>
